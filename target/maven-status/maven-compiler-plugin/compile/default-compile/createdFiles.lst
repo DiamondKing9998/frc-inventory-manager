@@ -1,2 +1,6 @@
 com\cwarren\frcinventory\FrcinventoryApplication.class
+com\cwarren\frcinventory\service\ItemService.class
+com\cwarren\frcinventory\controller\ItemController.class
 com\cwarren\frcinventory\controller\HomeController.class
+com\cwarren\frcinventory\model\Item.class
+com\cwarren\frcinventory\repository\ItemRepository.class

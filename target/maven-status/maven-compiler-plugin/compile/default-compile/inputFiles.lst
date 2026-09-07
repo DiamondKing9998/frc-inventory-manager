@@ -1,2 +1,6 @@
 C:\Users\carso\Documents\GitHubDesktopRepos\frc-inventory-manager\src\main\java\com\cwarren\frcinventory\controller\HomeController.java
+C:\Users\carso\Documents\GitHubDesktopRepos\frc-inventory-manager\src\main\java\com\cwarren\frcinventory\controller\ItemController.java
 C:\Users\carso\Documents\GitHubDesktopRepos\frc-inventory-manager\src\main\java\com\cwarren\frcinventory\FrcinventoryApplication.java
+C:\Users\carso\Documents\GitHubDesktopRepos\frc-inventory-manager\src\main\java\com\cwarren\frcinventory\model\Item.java
+C:\Users\carso\Documents\GitHubDesktopRepos\frc-inventory-manager\src\main\java\com\cwarren\frcinventory\repository\ItemRepository.java
+C:\Users\carso\Documents\GitHubDesktopRepos\frc-inventory-manager\src\main\java\com\cwarren\frcinventory\service\ItemService.java
