@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory</title>
+</head>
+<body>
+
+<h1>Inventory Items</h1>
+
+<a href="/items/new">Add Item</a>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Manufacturer</th>
+        <th>Part Number</th>
+        <th>Quantity</th>
+        <th>Location</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:each="item : ${items}">
+        <td th:text="${item.name}"></td>
+        <td th:text="${item.category}"></td>
+        <td th:text="${item.manufacturer}"></td>
+        <td th:text="${item.partNumber}"></td>
+        <td th:text="${item.totalQuantity}"></td>
+        <td th:text="${item.storageLocation}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
