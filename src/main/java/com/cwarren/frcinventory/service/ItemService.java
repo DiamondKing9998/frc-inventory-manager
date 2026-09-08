@@ -20,7 +20,32 @@ public class ItemService {
         return itemRepository.findAll();
     }
 
+    public Item getItemById(Long id) {
+        return itemRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Invalid item ID: " + id));
+    }
+
     public Item saveItem(Item item) {
         return itemRepository.save(item);
+    }
+
+    public void deleteItem(Long id) {
+        itemRepository.deleteById(id);
+    }
+
+    public boolean nameExists(String name) {
+        return itemRepository.existsByNameIgnoreCase(name);
+    }
+
+    public boolean partNumberExists(String partNumber) {
+        return itemRepository.existsByPartNumberIgnoreCase(partNumber);
+    }
+
+    public boolean nameExistsForOtherItem(String name, Long id) {
+        return itemRepository.existsByNameIgnoreCaseAndIdNot(name, id);
+    }
+
+    public boolean partNumberExistsForOtherItem(String partNumber, Long id) {
+        return itemRepository.existsByPartNumberIgnoreCaseAndIdNot(partNumber, id);
     }
 }
